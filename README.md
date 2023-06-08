@@ -28,8 +28,15 @@ Here are a few commonly used decorators in Nest.js:
 - Modules are effective way to organize   components by a closely related set of capabilities(e.g per Feature)
 - Its a good practice to have a folder  per module, containing the module ' components.
 - Modules are singletons therefore a  module can be  imported by multiple other modules (promotes reusability, consistency, and efficient resource utilization)
+- Command to create a module : ```nest g module name-of-module```
 ##### Defining a module 
 - A module is defined by annotating a class  with the```@Module``` decorator
 - Decorator provide the meta data
 ``` Metadata refers to data that provides information about other data. It offers context, description, and structure to help understand and manage the actual data it describes. In other words, metadata gives meaning and organization to raw data.```
 ----
+##### Nest-js Controller :
+ -  RResponsible for  handling incoming requests and returning  response of the client 
+ - Bound to a specific path (eg. "/tasks") fot task resource. 
+ - Contains handlers which handles endpoints and request methods like GET, POST, DELETE etc. 
+ - Can take advantage of dependencies injection ot consume provider in the same module 
+ - Defining Controller  
