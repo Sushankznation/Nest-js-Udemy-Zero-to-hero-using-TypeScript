@@ -67,3 +67,5 @@ Here are a few commonly used decorators in Nest.js:
 -----
 ##### Nest-js Services :
 - Define as providers. __Not all providers are services__
+- Eg. Validation of data, create an item in a dataBase and return a response.
+- 
