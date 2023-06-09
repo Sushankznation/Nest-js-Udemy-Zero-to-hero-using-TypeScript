@@ -57,7 +57,7 @@ Here are a few commonly used decorators in Nest.js:
  ##### Nest-js Handler :
  - Handlers are simply methods within the controller class, decorated with decorators such as ```@Get, @Post, @Delete``` etc.
  - eg.
- ![Alt text](image.png)
+ ![Alt text](./srcForReadme//image.png)
 -----
 ##### Nest.js Providers : 
 - Can be injected into constructors id decorated  as  an ```@Injectable```, via  dependency Injection.
