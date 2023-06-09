@@ -34,9 +34,23 @@ Here are a few commonly used decorators in Nest.js:
 - Decorator provide the meta data
 ``` Metadata refers to data that provides information about other data. It offers context, description, and structure to help understand and manage the actual data it describes. In other words, metadata gives meaning and organization to raw data.```
 ----
+##### Providers : 
+- the providers that will be instantiated by the Nest injector and that may be shared at least across this module.
+##### controllers :
+- the set of controllers defined in this module which have to be instantiated.
+##### imports :
+- the list of imported modules that export the providers which are required in this module
+##### Exports : 
+- the subset of providers that are provided by this module and should be available in other modules which import this module. You can use either the provider itself or just its token (provide value)
+---- 
 ##### Nest-js Controller :
- -  RResponsible for  handling incoming requests and returning  response of the client 
+ -  Responsible for  handling incoming requests and returning  response of the client 
  - Bound to a specific path (eg. "/tasks") fot task resource. 
  - Contains handlers which handles endpoints and request methods like GET, POST, DELETE etc. 
  - Can take advantage of dependencies injection ot consume provider in the same module 
- - Defining Controller  
+ - Defining Controller  ```@Controller ```
+ - The decorator accepts a string, which is the path to be handled  by the controller.
+ -----
+ ##### Nest-js Handler :
+ - Handlers are simply methods within the controller class, decorated with decorators such as ```@Get, @Post, @Delete``` etc.
+ ![Alt text](image.png)
